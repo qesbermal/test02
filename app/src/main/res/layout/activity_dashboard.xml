@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:backgroundTint="#31FFFFFF"
+    android:backgroundTintMode="add"
+    android:fillViewport="false"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CE673AB7"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="125dp"
+        android:layout_height="118dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@mipmap/ncsa_logo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:baselineAligned="false"
+                android:visibility="visible">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/requirements_cv"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_marginStart="25dp"
+                        android:elevation="@dimen/cardview_default_elevation"
+                        app:cardBackgroundColor="#D3FBFBFB"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageButton
+                            android:id="@+id/iv_requirements"
+                            android:layout_width="130dp"
+                            android:layout_height="115dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15dp"
+                            android:backgroundTint="#00FFFFFF"
+                            android:clickable="true"
+                            android:contentDescription="Student Requirements"
+                            android:focusable="true"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@mipmap/file_img"
+                            tools:ignore="ImageContrastCheck" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center"
+                            android:layout_marginBottom="10dp"
+                            android:text="Requirements" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/enrollment_cv"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="30dp"
+                        android:alwaysDrawnWithCache="true"
+                        android:animateLayoutChanges="true"
+                        app:cardBackgroundColor="#D3FBFBFB"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageButton
+                            android:id="@+id/iv_enrollment"
+                            android:layout_width="127dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15dp"
+                            android:backgroundTint="#00FFFFFF"
+                            android:clickable="true"
+                            android:contentDescription="@string/app_name"
+                            android:focusable="true"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@mipmap/student_img" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="83dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center"
+                            android:layout_marginBottom="10dp"
+                            android:text="Enrollment" />
+
+                    </androidx.cardview.widget.CardView>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/calendar_cv"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="25dp"
+                        app:cardBackgroundColor="#D3FBFBFB"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageButton
+                            android:id="@+id/iv_calendar"
+                            android:layout_width="114dp"
+                            android:layout_height="112dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="#00FFFFFF"
+                            android:clickable="true"
+                            android:contentDescription="Calendar"
+                            android:focusable="true"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@mipmap/calendar_img" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center"
+                            android:layout_marginBottom="10dp"
+                            android:text="Calendar" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/payment_cv"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="30dp"
+                        app:cardBackgroundColor="#D3FBFBFB"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageButton
+                            android:id="@+id/iv_payment"
+                            android:layout_width="123dp"
+                            android:layout_height="112dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="#00FFFFFF"
+                            android:clickable="true"
+                            android:contentDescription="Payment"
+                            android:focusable="true"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@mipmap/payment_img" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center"
+                            android:layout_marginBottom="10dp"
+                            android:text="Payment" />
+
+                    </androidx.cardview.widget.CardView>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/contact_cv"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="25dp"
+                        app:cardBackgroundColor="#D3FBFBFB"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageButton
+                            android:id="@+id/iv_contact"
+                            android:layout_width="117dp"
+                            android:layout_height="114dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="#00FFFFFF"
+                            android:clickable="true"
+                            android:contentDescription="Social"
+                            android:focusable="true"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@mipmap/talk_img" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center"
+                            android:layout_marginBottom="10dp"
+                            android:text="Contact Us" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/about_cv"
+                        android:layout_width="160dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="30dp"
+                        app:cardBackgroundColor="#D3FBFBFB"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageButton
+                            android:id="@+id/iv_about"
+                            android:layout_width="126dp"
+                            android:layout_height="113dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="#00FFFFFF"
+                            android:clickable="true"
+                            android:contentDescription="About Us"
+                            android:focusable="true"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@mipmap/about_img" />
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center"
+                            android:layout_marginBottom="10dp"
+                            android:text="About Us" />
+                    </androidx.cardview.widget.CardView>
+
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
